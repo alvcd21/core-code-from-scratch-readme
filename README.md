@@ -88,6 +88,7 @@ FinAlgoritmo
 
 # Desafio Semana (Jueves)
 
+## Tablas de Verdad
 1. T T = T &✅
 2. T F = F &✅
 3. F T = T &❌
@@ -103,7 +104,8 @@ FinAlgoritmo
 13. ~((T F ) (F F)) F = F |&|&✅
 14. ~((T F ) (F F)) T = T |&|&✅
 
-Algoritmo boolean
+## Resultados Booleanos
+Algoritmo resultados 
 
 	a <- 5 == 3
 	//a es Falso ya que 5 no es igual a 3.
@@ -120,5 +122,18 @@ Algoritmo boolean
 	
 FinAlgoritmo
 
+## Numeros Pares o Impares
+Algoritmo paroimpar
+	
+	Imprimir  'Ingrese el numero a evaluar'
+	leer num
+	
+	si num%2 ==0 Entonces
+		Imprimir 'El numero '+ConvertirATexto(num)+' Es Par'
+	sino
+		Imprimir 'El numero '+ConvertirATexto(num)+' Es Impar'
+	FinSi
+	
+FinAlgoritmo
 
 
