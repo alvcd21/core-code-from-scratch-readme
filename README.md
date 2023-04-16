@@ -83,6 +83,7 @@ Sacadas las contradicciones se puede entender que hay almenos dos cofres con tes
 # Desafio Semana 2(Lunes)
 
 ## Solucion Desafio Lunes
+
 #### Analizando el problema deduje lo siguiente:
 1. Alice: No dice la verdad ya que si ninguno estudio la incluye a ella por lo que para que sea verdad quiere decir que ella debio haber estudiado.
 2. Bob: 1 persona estudio si esta fuera una verdad podria ser el unico que haber estudiado ya que si dice que solo 1 que seria el mismo.
