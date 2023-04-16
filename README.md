@@ -104,12 +104,20 @@ FinAlgoritmo
 14. ~((T F ) (F F)) T = T |&|&✅
 
 Algoritmo boolean
+
 	a <- 5 == 3
+	//a es Falso ya que 5 no es igual a 3.
 	b <- 4 <> 3
+	//b es Verdadero ya que 4 no es diferente a 3.
 	c <- 7 > 7
+	//c es Falso ya que 7 no es mayor que 7.
 	d <- 4 < 4
+	//d es Falso ya que 4 no es menor que 4.
 	e <- 100 <= 90
+	//e es Falso ya que 100 no es menor que 90 ni tampoco igual.
 	f <- 40 >= 40
+	//f es Verdadero ya que 40  es igual que 40.
+	
 FinAlgoritmo
 
 
