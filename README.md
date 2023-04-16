@@ -21,14 +21,21 @@
 
 
 ## Imprimir nombre
+
 Algoritmo miNombre	
+
 	Imprimir  'Alvaro Luis Cadenas'
+	
 FinAlgoritmo
 
 ## Imprimir nombre y edad
+
 Algoritmo miNombre
+
 	Imprimir 'Alvaro Luis Cadenas'
+	
 	Imprimir 21
+	
 FinAlgoritmo
 
 # Desafio Semana (Miercoles)
@@ -39,9 +46,13 @@ FinAlgoritmo
 ## MOD
 
 Algoritmo calculo
-	leer num	
-	mod=num%2	
+
+	leer num
+	
+	mod=num%2
+	
 	Imprimir mod
+	
 FinAlgoritmo
 
 ## Fomulario de Registro
@@ -92,7 +103,14 @@ FinAlgoritmo
 13. ~((T F ) (F F)) F = F |&|&✅
 14. ~((T F ) (F F)) T = T |&|&✅
 
-
+Algoritmo boolean
+	a <- 5 == 3
+	b <- 4 <> 3
+	c <- 7 > 7
+	d <- 4 < 4
+	e <- 100 <= 90
+	f <- 40 >= 40
+FinAlgoritmo
 
 
 
