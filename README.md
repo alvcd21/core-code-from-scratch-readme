@@ -1,6 +1,6 @@
 # core-code-from-scratch-readme
 
-# Desafio Semana 1(Lunes)
+# Desafio Semana 1(Miercoles)
 
 ## Solucion Desafio dia Miercoles
 
@@ -43,7 +43,7 @@
 * Mostrar Volumen
 
 
-## Solucion Desafio dia Jueves
+# Desafio Semana 1(Jueves)
 
 ## Numero Par o Impar
 1. Cual es el numero a evaluar
@@ -121,7 +121,7 @@ Algoritmo miNombre
 	
 FinAlgoritmo
 
-# Desafio Semana (Miercoles)
+# Desafio Semana 2(Miercoles)
 
 ## Juego de Algoritmos
 ![image](https://user-images.githubusercontent.com/114757669/232183731-9fbc8ad5-d89f-4729-9d53-8f6ac2b50e9b.png)
@@ -169,7 +169,7 @@ Algoritmo Formulario
 FinAlgoritmo
 
 
-# Desafio Semana (Jueves)
+# Desafio Semana 2(Jueves)
 
 ## Tablas de Verdad
 1. T T = T &✅
