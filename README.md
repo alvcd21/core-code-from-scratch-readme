@@ -2,8 +2,6 @@
 
 # Desafio Semana 1(Miercoles)
 
-## Solucion Desafio dia Miercoles
-
 ## Algoritmo para Hacer una Pizza
 1. Paso 1: Conseguir los ingredientes
 2. Paso 2:Hacer y Amazar la Masa
@@ -82,7 +80,6 @@ Sacadas las contradicciones se puede entender que hay almenos dos cofres con tes
 
 # Desafio Semana 2(Lunes)
 
-## Solucion Desafio Lunes
 
 #### Analizando el problema deduje lo siguiente:
 1. Alice: No dice la verdad ya que si ninguno estudio la incluye a ella por lo que para que sea verdad quiere decir que ella debio haber estudiado.
