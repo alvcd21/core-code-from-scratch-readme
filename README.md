@@ -216,4 +216,212 @@ Algoritmo paroimpar
 	
 FinAlgoritmo
 
+# Desafio Semana 3(Lunes)
 
+
+## Numeros Calculadora Simple
+Algoritmo calculadora
+	
+	Imprimir "========================="
+	Imprimir "Ingrese su primer numero"
+	leer num1
+	Imprimir "Ingrese el segundo numero"
+	leer num2
+	Imprimir "Seleccione numero de la operacion a realizar: "
+	Imprimir " + , - , * , /"
+	leer op
+	Si op=="+" | op=="-" | op=="*" | op=="/" Entonces
+		Si op=="+" Entonces
+			Imprimir "La Suma de "+ConvertirATexto(num1)+ " + "+ConvertirATexto(num2)
+			Imprimir "Es total: "+ConvertirATexto(num1+num2)
+		SiNo
+			Si op=="-" Entonces
+				Imprimir "La Resta de "+ConvertirATexto(num1)+ " - "+ConvertirATexto(num2)
+				Imprimir "Es total: "+ConvertirATexto(num1-num2)
+			SiNo
+				si op=="*" Entonces
+					Imprimir "La Multiplicacion de "+ConvertirATexto(num1)+ " x "+ConvertirATexto(num2)
+					Imprimir "Es total: "+ConvertirATexto(num1+num2)
+				SiNo
+					Si op=="/" Entonces
+						Imprimir "La Division de "+ConvertirATexto(num1)+ " / "+ConvertirATexto(num2)
+						Imprimir "Es total: "+ConvertirATexto(num1+num2)
+					FinSi
+				FinSi
+			FinSi
+		Fin Si
+	SiNo
+		Imprimir "Ingrese el Operador Correcto"
+	Fin Si
+	
+FinAlgoritmo
+
+## Numero Especial
+
+Algoritmo specialNumber
+
+	Imprimir "Ingrese un numero"
+	Leer n
+	Si n == 100 Entonces
+		Imprimir "¡Este es un número especial!"
+	FinSi
+	Si n < 1000 & n%10==0 Entonces
+		Imprimir "Este numero es casi especial"
+	SiNo
+		Imprimir "Solo un numero regular"
+	FinSi
+
+FinAlgoritmo
+
+
+# Desafio Semana 3(Martes)
+
+## Calculadora con Switch
+
+Algoritmo calculadora
+	
+	Imprimir "========================="
+	Imprimir "Ingrese su primer numero"
+	leer num1
+	Imprimir "Ingrese el segundo numero"
+	leer num2
+	Imprimir "Seleccione numero de la operacion a realizar: "
+	Imprimir " + , - , * , /"
+	leer op
+	Si op=="+" | op=="-" | op=="*" | op=="/" Entonces
+		Segun op Hacer
+			"+":
+				Imprimir "La Suma de "+ConvertirATexto(num1)+ " + "+ConvertirATexto(num2)
+				Imprimir "Es total: "+ConvertirATexto(num1+num2)
+			"-":
+				Imprimir "La Resta de "+ConvertirATexto(num1)+ " - "+ConvertirATexto(num2)
+				Imprimir "Es total: "+ConvertirATexto(num1-num2)
+			"*":
+				Imprimir "La Multiplicacion de "+ConvertirATexto(num1)+ " x "+ConvertirATexto(num2)
+				Imprimir "Es total: "+ConvertirATexto(num1+num2)
+			"/":
+				Imprimir "La Division de "+ConvertirATexto(num1)+ " / "+ConvertirATexto(num2)
+				Imprimir "Es total: "+ConvertirATexto(num1+num2)
+			De Otro Modo:
+				Imprimir "Operacion no valida"
+		Fin Segun
+	SiNo
+		Imprimir "Ingrese el Operador Correcto"
+	Fin Si
+		
+FinAlgoritmo
+
+## Programa Multi Opcion
+
+Algoritmo multiOpcion
+	Imprimir "-----------------------------"
+	Imprimir "Programa Multi-Opcion"
+	Imprimir "1-Suma de Dos Numeros"
+	Imprimir "2-Mostrar dia de la Semana"
+	Imprimir "3-Longitud de una cadenas"
+	Imprimir "Seleccione el numero de la seleccion"
+	Leer op
+	Segun op Hacer
+		1:
+			Imprimir "Suma de dos numeros: "
+			Imprimir "Ingrese el primero numero"
+			Leer num1
+			Imprimir "Ingrese el segundo numero"
+			Leer num2
+			Imprimir "La Suma de "+ConvertirATexto(num1)+ " + "+ConvertirATexto(num2)
+			Imprimir "Es total: "+ConvertirATexto(num1+num2)
+
+		2:
+			Imprimir "Muestras de Dias de la Semana"
+			Imprimir "Ingrese el numero de 1 a 7"
+			Leer dia
+			Segun dia Hacer
+				1:
+					Imprimir "Lunes"
+				2:
+					Imprimir "Martes"
+				3:
+					Imprimir "Miercoles"
+				4:
+					Imprimir "Jueves"
+				5:
+					Imprimir "Viernes"
+				6:
+					Imprimir "Sabado"
+				7:
+					Imprimir "Domingo"
+				De Otro Modo:
+					Imprimir "Seleccione un dia del 1 a 7"
+			Fin Segun
+		3:
+			Imprimir "Longitud de Texto"
+			Imprimir "Ingrese la cadena de texto"
+			Leer texto
+			Imprimir "EL tamaño del texto es: " + ConvertirATexto(Longitud(texto))
+		De Otro Modo:
+			Imprimir "Seleccione una opcion correcta"
+	Fin Segun
+FinAlgoritmo
+
+# Desafio Semana 3(Miercoles)
+
+## Tablas de Multiplicar
+
+Algoritmo TablasMulti
+	
+	Imprimir "Tabla de Multiplicacion"
+	Imprimir  "Ingrese el el numero de la tabla a calcular"
+	Leer tab
+	
+	i=1
+	Imprimir "=========================="
+	Imprimir  "Tabla del "+ConvertirATexto(tab)
+	Mientras i<=10 Hacer
+		Imprimir ConvertirATexto(tab)+ " * " +ConvertirATexto(i)+ " = " +ConvertirATexto(tab*i)
+		i=i+1
+	FinMientras
+	Imprimir "=========================="
+	
+	
+FinAlgoritmo
+
+## Calculadora Simple con DO WHILE
+Algoritmo calculadoraDoWhile
+	
+	Repetir 
+		
+		Imprimir "========================="
+		Imprimir "Ingrese su primer numero"
+		leer num1
+		Imprimir "Ingrese el segundo numero"
+		leer num2
+		Imprimir "Seleccione numero de la operacion a realizar: "
+		Imprimir " + , - , * , /"
+		leer op
+		Si op=="+" | op=="-" | op=="*" | op=="/" Entonces
+			Segun op Hacer
+				"+":
+					Imprimir "La Suma de "+ConvertirATexto(num1)+ " + "+ConvertirATexto(num2)
+					Imprimir "Es total: "+ConvertirATexto(num1+num2)
+				"-":
+					Imprimir "La Resta de "+ConvertirATexto(num1)+ " - "+ConvertirATexto(num2)
+					Imprimir "Es total: "+ConvertirATexto(num1-num2)
+				"*":
+					Imprimir "La Multiplicacion de "+ConvertirATexto(num1)+ " x "+ConvertirATexto(num2)
+					Imprimir "Es total: "+ConvertirATexto(num1+num2)
+				"/":
+					Imprimir "La Division de "+ConvertirATexto(num1)+ " / "+ConvertirATexto(num2)
+					Imprimir "Es total: "+ConvertirATexto(num1+num2)
+				De Otro Modo:
+					Imprimir "Operacion no valida"
+			Fin Segun
+		SiNo
+			Imprimir "Ingrese el Operador Correcto"
+		Fin Si
+		Imprimir "Quiere realizar otra operacion"
+		Leer verf
+		
+	Mientras Que verf="Si" || verf="si"
+	
+	
+FinAlgoritmo
