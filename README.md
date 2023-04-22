@@ -444,3 +444,67 @@ Algoritmo TablasMultiFor
 	
 	
 FinAlgoritmo
+
+## Ordenar de Forma Ascendentes o Descendentes
+
+Algoritmo numeroAsenoDesc
+	
+	Imprimir "================================="
+	Imprimir "Numeros Asendentes o Descendentes"
+	Imprimir "Ingrese el numero de referencia"
+	Leer num
+	Imprimir "Seleccione el numero de la opcion"
+	Imprimir "1-Orden Asendente"
+	Imprimir "2-Orden Descendentes"
+	Leer op
+	Segun op Hacer
+		1:
+			Para i=0 Hasta num Con Paso 1 Hacer
+				Imprimir ConvertirATexto(i)
+			Fin Para
+		2:
+			Para i=num Hasta 0 Con Paso -1 Hacer
+				Imprimir ConvertirATexto(i)
+			Fin Para
+		De Otro Modo:
+			Imprimir "Seleccione la Opcion correcta"
+	Fin Segun
+	
+FinAlgoritmo
+
+## Saludos
+Algoritmo Saludos
+	
+	Imprimir "============================================="
+	cantidad=0
+	continuar=1
+	Mientras continuar==1 Hacer
+		
+		Imprimir "Ingrse la hora representad en Fomato 24H(0-23)"
+		Leer hora
+		
+		Si hora<=12 Entonces
+			Imprimir "BUENOS DIAS :)"
+			
+		SiNo
+			Si hora<=18 Entonces
+				Imprimir "BUENAS TARDES :)"
+				
+			SiNo
+				Si hora <=23 Entonces
+					Imprimir "BUENAS NOCHES :)"
+				FinSi
+				
+			FinSi
+		FinSi
+		
+		Imprimir "Desea continuar con los saludos"
+		Imprimir "1-Si   o   2-No"
+		Leer continuar
+		
+		cantidad=cantidad+1;
+	FinMientras
+	
+	Imprimir "El total de los saludos fue: "+ConvertirATexto(cantidad)
+FinAlgoritmo
+
