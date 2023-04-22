@@ -425,3 +425,22 @@ Algoritmo calculadoraDoWhile
 	
 	
 FinAlgoritmo
+
+## Tablas de Multiplicar con FOR	
+Algoritmo TablasMultiFor
+	
+	Imprimir "Tabla de Multiplicacion"
+	Imprimir  "Ingrese el el numero de la tabla a calcular"
+	Leer tab
+	
+	Imprimir "=========================="
+	Imprimir  "Tabla del "+ConvertirATexto(tab)
+	Para i=1 Hasta 10 Con Paso 1 Hacer
+		
+		Imprimir ConvertirATexto(tab)+ " * " +ConvertirATexto(i)+ " = " +ConvertirATexto(tab*i)
+		
+	FinPara
+	Imprimir "=========================="
+	
+	
+FinAlgoritmo
