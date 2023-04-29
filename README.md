@@ -508,3 +508,157 @@ Algoritmo Saludos
 	Imprimir "El total de los saludos fue: "+ConvertirATexto(cantidad)
 FinAlgoritmo
 
+# Desafio Semana 4(Lunes)
+
+## Comision y Promedio de Ventas
+Algoritmo ventas
+	
+	Escribir "Ingrese la cantidad de Ventas: "
+	Leer venta
+	SumTot=0
+	Para i=1 Hasta venta Con Paso 1 Hacer
+		
+		Imprimir "Ingrese el Monto de la Venta "+ConvertirATexto(i)
+		Leer monto		
+		SumTot=+monto
+		
+	FinPara
+	
+	promedio=SumTot/venta
+	comision=0
+	
+	Si  venta<=5 & venta>0 Entonces
+		
+		comision=SumTot*0.10
+		
+	FinSi
+	
+	Si venta>5
+			comision=SumTot*0.15
+	FinSi
+
+	Imprimir "El Promedio de Ventas es: "+ConvertirATexto(promedio)	
+	Imprimir "La comision por sus ventas fue: "+ConvertirATexto(comision)	
+	
+	
+FinAlgoritmo
+
+## Numeros Pares o Impares
+Algoritmo paroimpar
+	
+	Repetir
+		Imprimir "Ingrese un numero entre 1-50"
+		Leer num
+		
+		Si num>50 | num<0
+			Imprimir "Por favor ingrese un numero entre 1-50"
+		FinSi
+		
+	Mientras Que num>50 | num<=0
+	
+	numPar=num%2=0
+	
+	Para i=0 Hasta num Con Paso 1 Hacer
+		Si i%2=0 & numPar Entonces
+			Imprimir i
+		FinSi
+		Si i%2=1 & ~(numPar) Entonces
+			Imprimir i
+		FinSi		
+	FinPara
+	
+FinAlgoritmo
+
+## Nombre con Letras Mayusculas
+Algoritmo nombre
+	
+	Imprimir "Ingrese el Nombre"
+	Leer nom
+	
+	Imprimir "Ingrese su Apellido"
+	Leer ape
+	
+	nombreP = Mayusculas(Subcadena(nom,0,0)) + Minusculas(Subcadena(nom,1,Longitud(nom)-1))
+	apellido=Mayusculas(Subcadena(ape,0,0)) + Minusculas(Subcadena(ape,1,Longitud(ape)-1))
+	
+	Imprimir nombreP +" "+apellido
+	
+FinAlgoritmo
+
+
+Algoritmo dados
+	
+	Definir dado1 Como Entero
+	Definir dado2 Como Entero
+	
+	Para i=1 Hasta 10 Con Paso 1 Hacer
+		
+		dado1=Aleatorio(1,6)
+		dado2=Aleatorio(1,6)
+		
+		Si dado1=dado2 Entonces
+			Imprimir dado1," ",dado2," Los dados son iguales"
+			
+		SiNo
+			Imprimir dado1," ",dado2
+		FinSi
+		
+	FinPara
+	
+FinAlgoritmo
+
+Algoritmo distanciadeCero
+	
+	Imprimir "Ingrese un numero"
+	Leer num
+	
+	Para i=1 Hasta 4 Con Paso 1 Hacer
+		Imprimir "Ingrese un numero"
+		Leer numero
+		Si Abs(numero) > Abs(num) Entonces
+			num=numero
+		FinSi
+	FinPara
+	
+	Imprimir "El numero mas alejado de 0 es",Trunc(num)
+	
+	
+FinAlgoritmo
+
+Algoritmo lanzarMoneda
+	
+	Imprimir "Ingrese el nombre del primer Jugador"
+	Leer jug1
+	
+	Imprimir "Ingrese el monto del jugador 1"
+	Leer monto1
+	
+	Imprimir "Ingrese el nombre del segundo Jugador"
+	Leer jug2
+	
+	Imprimir "Ingrese el monto del jugador 2"
+	Leer monto2
+	
+	Si monto1<=0 | monto2 <=0 Entonces
+		Si monto1<=0 & monto2 <=0 Entonces
+			Imprimir "Juego Cancelado"
+			
+		SiNo
+			SI monto1<=0 Entonces
+				Imprimir "Jugador Ganador ",Mayusculas(jug2)," Monto 0"
+			Sino
+					Imprimir "Jugador Ganador ",Mayusculas(jug1)," Monto 0"
+			FinSi
+		FinSi
+	SiNo
+		Si Aleatorio(1,2) =1 Entonces
+			Imprimir "Jugador Ganador ", Mayusculas(jug1)," Monto ",monto2
+		SiNo
+			Imprimir "Jugador Ganador ", Mayusculas(jug2)," Monto ",monto1
+		FinSi
+		
+	FinSi
+	
+	
+FinAlgoritmo
+
