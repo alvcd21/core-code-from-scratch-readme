@@ -569,6 +569,8 @@ Algoritmo paroimpar
 	
 FinAlgoritmo
 
+# Desafio Semana 4(Martes)
+
 ## Nombre con Letras Mayusculas
 Algoritmo nombre
 	
@@ -585,7 +587,7 @@ Algoritmo nombre
 	
 FinAlgoritmo
 
-
+## Tira de Dados
 Algoritmo dados
 	
 	Definir dado1 Como Entero
@@ -607,6 +609,10 @@ Algoritmo dados
 	
 FinAlgoritmo
 
+# Desafio Semana 4(Miercoles)
+
+## Distancia a Cero
+
 Algoritmo distanciadeCero
 	
 	Imprimir "Ingrese un numero"
@@ -624,6 +630,8 @@ Algoritmo distanciadeCero
 	
 	
 FinAlgoritmo
+
+## Lanzar Moneda
 
 Algoritmo lanzarMoneda
 	
@@ -662,3 +670,64 @@ Algoritmo lanzarMoneda
 	
 FinAlgoritmo
 
+# Desafio Semana 4(Jueves)
+
+## Precio Total
+Funcion  total <- TotalPrice(precio,iva)
+	
+	SI precio>3000
+
+		totalIVa=precio*(iva/100)
+		descuento=(precio+totalIVa)*0.1
+		total=(precio+totalIVa)-descuento
+	SiNo
+		
+		totalIVa=precio*(iva/100)
+		total=precio+totalIVa
+		
+	FinSi
+	
+
+	
+FinFuncion
+
+
+Algoritmo precioTotal
+	
+	Imprimir TotalPrice(5000,21)
+
+	
+FinAlgoritmo
+
+## Letras al Reves
+
+Funcion reves<-textoReves(texto)
+	
+	Definir textoRev Como Caracter;
+	textoRev=""
+	tam=Longitud(texto)
+	Para i = tam Hasta 0 Con Paso -1 Hacer
+		
+		may= Subcadena(texto,i,i);
+		
+		SI may=Mayusculas(may) Entonces
+			
+			may=Minusculas(may)
+			
+		SiNo
+
+			may=Mayusculas(may)
+			
+		FinSi
+		
+		textoRev = Concatenar(textoRev, may)
+	FinPara
+	reves=textoRev
+FinFuncion
+
+
+Algoritmo letrasReves
+	
+	Imprimir textoReves("Hola")
+	
+FinAlgoritmo
