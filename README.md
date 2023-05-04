@@ -731,3 +731,22 @@ Algoritmo letrasReves
 	Imprimir textoReves("Hola")
 	
 FinAlgoritmo
+
+
+
+Funcion tiempo <- conversor(seg)
+	
+	Definir min, hora, dias Como Entero 
+	min=Trunc(seg/60)
+	hora=Trunc(seg/3600)
+	dias=Trunc(seg/86400)
+	
+	tiempo= "días: "+ConvertirATexto(Trunc(dias))+" horas: "+ConvertirATexto(hora%24)+" min: "+ConvertirATexto(min%60)+" seg: "+ConvertirATexto(seg%60)
+	
+FinFuncion
+
+Algoritmo conversorDeTiempo
+	
+	Imprimir conversor(40000 )
+	
+FinAlgoritmo
