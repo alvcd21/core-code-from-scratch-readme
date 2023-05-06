@@ -746,13 +746,17 @@ Funcion tiempo <- conversor(seg)
 	tiempo= "días: "+ConvertirATexto(Trunc(dias))+" horas: "+ConvertirATexto(hora%24)+" min: "+ConvertirATexto(min%60)+" seg: "+ConvertirATexto(seg%60)
 	
 FinFuncion
+
 Algoritmo conversorDeTiempo
-	Imprimir conversor(40000 )	
+
+	Imprimir conversor(40000 )
+	
 FinAlgoritmo
 
 ## Comparar Distancias
 
 Funcion resultado <- Comparacion()
+
 	i=0;
 	negat=0
 	posit=0
@@ -773,10 +777,13 @@ Funcion resultado <- Comparacion()
 	SiNo
 		resultado=falso
 	FinSi
+	
 FinFuncion
 
 Algoritmo compararDistancia
+
 	Imprimir Comparacion();
+	
 FinAlgoritmo
 
 # Desafio Semana 5(Martes)
@@ -784,6 +791,7 @@ FinAlgoritmo
 ## Suma de Pares
 
 Funcion resultado<-suma()
+
 	sum=0
 	num=0
 	Hacer
@@ -798,15 +806,19 @@ Funcion resultado<-suma()
 		FinSi
 	Mientras Que num>1 & num<=100
 	resultado=sum
+	
 FinFuncion
 
 Algoritmo sumPar
+
 	Imprimir suma()
+	
 FinAlgoritmo
 
 ## Punto Medio
 
 Funcion resultado<-medio(num1,num2)
+
 	Si num1 > 0 Entonces
 		Si num2 > 0 Entonces
 			SI num1 > num2 Entonces
@@ -831,7 +843,9 @@ Funcion resultado<-medio(num1,num2)
 FinFuncion
 
 Algoritmo puntoMedio
+
 	Imprimir  medio(40,80)
+	
 FinAlgoritmo
 
 # Desafio Semana 5(Miercoles)
@@ -856,20 +870,27 @@ Funcion opc <- menu()
 	Mientras Que op="a" | op="b"
 	
 	opc=Saldo
+	
 FinFuncion
 
 Funcion egreso <-Salida()
+
 	Imprimir "Ingrese el monto a Retirar"
 	Leer egreso
+	
 FinFuncion
 
 Funcion ingreso <- Deposito()
+
 	Imprimir "Ingrese el monto a Depositar"
 	Leer ingreso
+	
 FinFuncion
 
 Algoritmo Banco
+
 	Imprimir menu()
+	
 FinAlgoritmo
 
 ## Promedio de Tiempo
@@ -898,10 +919,13 @@ Funcion result <- grados()
 		i=i+1
 	Mientras Que op="a" | op="b"
 	result=celsius/i
+	
 FinFuncion
 
 Funcion gcelsius<-Conversor(g)
+
 	gcelsius=(g - 32 ) / 1.8
+	
 FinFuncion
 
 Algoritmo promTiempo
