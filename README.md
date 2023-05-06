@@ -732,7 +732,9 @@ Algoritmo letrasReves
 	
 FinAlgoritmo
 
+# Desafio Semana 5(Lunes)
 
+## Convertidor de Tiempo
 
 Funcion tiempo <- conversor(seg)
 	
@@ -744,12 +746,11 @@ Funcion tiempo <- conversor(seg)
 	tiempo= "días: "+ConvertirATexto(Trunc(dias))+" horas: "+ConvertirATexto(hora%24)+" min: "+ConvertirATexto(min%60)+" seg: "+ConvertirATexto(seg%60)
 	
 FinFuncion
-
 Algoritmo conversorDeTiempo
-	
-	Imprimir conversor(40000 )
-	
+	Imprimir conversor(40000 )	
 FinAlgoritmo
+
+## Comparar Distancias
 
 Funcion resultado <- Comparacion()
 	i=0;
@@ -772,14 +773,15 @@ Funcion resultado <- Comparacion()
 	SiNo
 		resultado=falso
 	FinSi
-
 FinFuncion
 
 Algoritmo compararDistancia
-	
 	Imprimir Comparacion();
-	
 FinAlgoritmo
+
+# Desafio Semana 5(Martes)
+
+## Suma de Pares
 
 Funcion resultado<-suma()
 	sum=0
@@ -801,6 +803,8 @@ FinFuncion
 Algoritmo sumPar
 	Imprimir suma()
 FinAlgoritmo
+
+## Punto Medio
 
 Funcion resultado<-medio(num1,num2)
 	Si num1 > 0 Entonces
@@ -826,9 +830,83 @@ Funcion resultado<-medio(num1,num2)
 	FinSi
 FinFuncion
 
-
 Algoritmo puntoMedio
-	
 	Imprimir  medio(40,80)
+FinAlgoritmo
+
+# Desafio Semana 5(Miercoles)
+
+## Cajero
+
+Funcion opc <- menu()
+	
+	saldo=1000
+	Repetir
+		Imprimir "Seleccione una Opcion"
+		Imprimir "a-Depositar"
+		Imprimir "b-Retirar"
+		Imprimir "c-Cerrar Sesion"
+		leer op
+		Si op="a"
+			Saldo=Saldo+Deposito()
+		FinSi
+		Si op="b"
+			Saldo=Saldo-Salida()
+		FinSi
+	Mientras Que op="a" | op="b"
+	
+	opc=Saldo
+FinFuncion
+
+Funcion egreso <-Salida()
+	Imprimir "Ingrese el monto a Retirar"
+	Leer egreso
+FinFuncion
+
+Funcion ingreso <- Deposito()
+	Imprimir "Ingrese el monto a Depositar"
+	Leer ingreso
+FinFuncion
+
+Algoritmo Banco
+	Imprimir menu()
+FinAlgoritmo
+
+## Promedio de Tiempo
+
+Funcion result <- grados()
+	
+	celsius=0
+	i=0
+	grad=0
+	Repetir
+		Imprimir "Seleccione una Opcion: "
+		Imprimir "a-Grados Celsius"
+		Imprimir "b-Grados Fahrenheit"
+		Imprimir "c-Salir"
+		Leer op
+		si op="a"
+			Imprimir "Ingrese los grados en Celsius"
+			leer grad
+			celsius=celsius+grad
+		FinSi
+		Si op="b"
+			Imprimir "Ingrese los grados en Fahrenheit"
+			leer grad
+			celsius=celsius+Conversor(grad)
+		FinSi
+		i=i+1
+	Mientras Que op="a" | op="b"
+	result=celsius/i
+FinFuncion
+
+Funcion gcelsius<-Conversor(g)
+	gcelsius=(g - 32 ) / 1.8
+FinFuncion
+
+Algoritmo promTiempo
+	
+	Imprimir grados()
 	
 FinAlgoritmo
+
