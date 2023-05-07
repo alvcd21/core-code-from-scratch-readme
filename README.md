@@ -934,3 +934,26 @@ Algoritmo promTiempo
 	
 FinAlgoritmo
 
+# Desafio Semana 5(Jueves)
+
+## Condicion IF
+
+if(hora>5){
+	console.log('Buenas Noches')
+}else{
+	console.log('Buenas Tardes')
+}
+
+## Condicion While
+while (i < 5) {
+    console.log("Numero: " + i);
+    i = i + 1;
+  }
+
+
+## Condicion For
+
+  for (let i = 0; i < 10; i++) {
+    console.log("Numero: " + i);
+  }
+
