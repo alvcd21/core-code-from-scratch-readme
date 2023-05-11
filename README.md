@@ -956,4 +956,30 @@ while (i < 5) {
   for (let i = 0; i < 10; i++) {
     console.log("Numero: " + i);
   }
+  
+# Desafio Semana 6(Lunes)
 
+## Iniciar en HTML
+![image](https://github.com/alvcd21/core-code-from-scratch-readme/assets/114757669/8ceb03a5-ef2c-4f69-9001-d80276e3d972)
+
+# Desafio Semana 6(Martes)
+
+## Variables
+
+const saludo="Hello Word"
+
+## Que es X
+
+//El valor de X es: 'Geeta'
+
+## Varias Variables
+
+let flower = 'rose';
+let tree = 'maple';
+
+## Reasignacion
+
+//El valor de x despues de la reasignacion es: 'Toe'
+
+## Asignar variables
+//El valor de x despues de la asignacion de la varible X es: 'Hardy'
