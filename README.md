@@ -983,3 +983,37 @@ let tree = 'maple';
 
 ## Asignar variables
 //El valor de x despues de la asignacion de la varible X es: 'Hardy'
+
+# Desafio Semana 6(Miercoles)
+
+## Funciones
+
+function hello(){
+return 'Hello world!'
+}
+
+## Multiples Funciones
+
+function a(){
+return 'Hello a!'
+}
+
+function b(){
+return 'Hello b!'
+}
+
+## Llamadas a Funciones
+
+function greet(){
+return 'Haydo!'
+}
+
+let salutation=greet()
+
+## Que es X(Version Funciones)
+//El valor que devuelve X es: 'How do you do?'
+
+## Parametros
+function echo(Greta){
+return Greta
+}
