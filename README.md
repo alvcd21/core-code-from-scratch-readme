@@ -1017,3 +1017,42 @@ let salutation=greet()
 function echo(Greta){
 return Greta
 }
+
+# Desafio Semana 6(Jueves)
+
+## Instrumentos de cuerda
+
+function greet (dato){
+  return 'Hello '+dato+'!'
+}
+
+greet('Ada');
+
+## Tamaño de Cadenas
+
+function length(texto){
+  return texto.length;
+}
+
+## toUpperCase y toLowerCase
+
+function toCase(texto){
+   return texto.toLowerCase()+'-'+texto.toUpperCase()
+}
+
+## CharAt
+
+function shortcut(text1, text2){
+  
+  return text1.charAt(0)+text2.charAt(0)
+
+}
+
+## indexOf
+
+function indexOfIgnoreCase(text1, text2){
+
+   return text1.toLowerCase().indexOf(text2.toLowerCase())
+
+}
+
