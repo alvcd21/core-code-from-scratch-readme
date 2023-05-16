@@ -1056,3 +1056,13 @@ function indexOfIgnoreCase(text1, text2){
 
 }
 
+# Desafio Semana 7(Lunes)
+
+## Condicion IF
+function firstWord(dato){
+
+    return dato.substr(0,dato.indexOf(' '))
+
+}
+
+
