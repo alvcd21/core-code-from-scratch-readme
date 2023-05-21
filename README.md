@@ -1065,4 +1065,79 @@ function firstWord(dato){
 
 }
 
+# Desafio Semana 7(Martes)
 
+## Primeros Pasos con Code Wars
+
+![image](https://github.com/alvcd21/core-code-from-scratch-readme/assets/114757669/935d5394-7168-4046-9923-264f7fc2aa68)
+
+## Objetos
+
+function animal(obj) {
+  return "This " + obj.color + " " + obj.name + " has " + obj.legs + " legs.";
+}
+
+## Return to Sanity
+
+function mystery() {
+  var results = {sanity: 'Hello'};
+  return results;
+}
+
+## Depuracion de Sintaxis de Objeto
+
+var rooms = {
+  first: {
+    description: 'This is the first room',
+    items: {
+      chair: 'The old chair looks comfortable',
+      lamp: 'This lamp looks ancient'
+      }
+  },
+  second: {
+    description: 'This is the second room',
+    items: {
+      couch: 'This couch looks like it would hurt your back',
+      table: 'On the table there is an unopened bottle of water'
+    }
+  }
+}
+
+# Desafio Semana 7(Miercoles)
+
+## Contar Cadena de Objetos
+
+function strCount(obj) {
+  let count = 0;
+
+  for (let key in obj) {
+    if (typeof obj[key] === "string") {
+      count++;
+    } else if (typeof obj[key] === "object" && obj[key] !== null) {
+      count += strCount(obj[key]);
+    }
+  }
+
+  return count;
+}
+
+## Extending JavaScript Objects: Get First & Last Array Element
+
+Array.prototype.first = function() {
+  return this[0];
+};
+
+Array.prototype.last = function() {
+  return this[this.length - 1];
+};
+
+## Object Oriented Piracy
+
+function Ship(draft,crew) {
+ this.draft = draft;
+ this.crew = crew;
+  
+  this.isWorthIt = function (){
+    return (this.draft - this.crew * 1.5) > 20;
+  }
+}
