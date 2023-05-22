@@ -1156,3 +1156,7 @@ function digitize(n) {
   return digits.reverse().map(Number);
 }
 
+## Truthy y Falsy
+const truthy = [true,"false",2,[],{}];
+const falsy = [false,"",0,null,undefined];
+
