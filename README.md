@@ -1141,3 +1141,18 @@ function Ship(draft,crew) {
     return (this.draft - this.crew * 1.5) > 20;
   }
 }
+## Convertir de String a Numero
+
+const stringToNumber = function(str){
+  // put your code here
+  return Number(str);
+}
+
+## Convertir de Numero a Array
+
+function digitize(n) {
+  //code here
+  var digits = String(n).split('');
+  return digits.reverse().map(Number);
+}
+
