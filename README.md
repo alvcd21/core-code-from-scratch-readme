@@ -1196,5 +1196,76 @@ function saleHotdogs(n){
   else if(n>=10) precio=90*n;
   return precio;
 }
+## Switch
+function howManydays(month){
+  var days;
+switch (month){
+    
+    case 1:
+      days=31;
+    break;
+    case 3:
+      days=31;
+    break;
+    case 5:
+      days=31;
+    break;
+    case 7:
+      days=31;
+    break;
+    case 8:
+      days=31;
+    break;
+    case 10:
+      days=31;
+    break;
+    case 12:
+      days=31;
+    break;
+    
+    
+    case 4:
+      days=30;
+    break;  
+    case 6:
+      days=30;
+    break;   
+    case 9:
+      days=30;
+    break;
+    case 11:
+      days=30;
+    break;
+    
+    case 2:
+      days=28;
+    break;
+  
+  }
+  return days;
+}
 
+## Calculadora
+
+function calculate(num1, operation, num2) {
+ //TODO: make a basic calculator. 
+    switch(operation){
+        case '+': 
+            return num1 + num2;
+        break;
+        case '-': 
+            return num1-num2;
+        break;
+       case '*': 
+            return num1*num2;
+        break;
+        case '/': 
+            return num2 !=0 ? num1/num2: null;
+        break;
+        default:
+        
+        return null;
+        
+    }
+}
 
