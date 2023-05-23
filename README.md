@@ -1186,3 +1186,13 @@ function popElement(arr){
   arr.pop();
   return arr
 }
+# Desafio Semana 8(Lunes)
+
+## If, Else y Operador 
+function saleHotdogs(n){
+  var precio;
+  if(n<5) precio=100*n;
+  else if(n>=5 && n<10) precio=95*n;
+  else if(n>=10) precio=90*n;
+  return precio;
+}
