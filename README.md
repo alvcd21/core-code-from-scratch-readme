@@ -1268,4 +1268,52 @@ function calculate(num1, operation, num2) {
         
     }
 }
+# Desafio Semana 8(Martes)
+## Par o Impar 
+function evenOrOdd(number) {
+  
+  if(number%2==0){
+    return "Even";
+  }else{
+    return "Odd"
+  }
+  
+}
+## Un lobo con piel de oveja 
+function warnTheSheep(queue) {
+  
+  let loboP=queue.indexOf('wolf');
+  let ovejaP=queue.length-(loboP+1);
+  if(loboP===queue.length-1){
+    return "Pls go away and stop eating my sheep";
+  }else{
+    return "Oi! Sheep number "+ovejaP+"! You are about to be eaten by a wolf!";
+  }
+   
+}
 
+## Decodificar el código morse
+
+decodeMorse = function(morseCode){
+  // Your code here
+  // You can use MORSE_CODE[morse]
+  
+  let palabras=morseCode.trim().split('   ');
+  let letras=[];
+  let frase=[];
+  
+  for(let i=0; i<palabras.length;i++){
+    
+    letras=palabras[i].split(' ');
+    
+    for(let j=0; j<letras.length; j++){    
+      
+      letras[j]=MORSE_CODE[letras[j]]
+      
+    }
+    frase.push(letras.join(''));
+    
+  }
+  return frase.join(' ').trim();
+  
+}
