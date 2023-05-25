@@ -1317,3 +1317,68 @@ decodeMorse = function(morseCode){
   return frase.join(' ').trim();
   
 }
+
+
+# Desafio Semana 8(Miercoles)
+
+## ¿A quién le gusta?
+
+function likes(names) {
+  // TODO
+  var nombres=[];
+   if(names.length==0){
+     return "no one likes this";
+   }else{
+      
+      for(let i=0;i<names.length;i++){
+        
+        nombres.push(names[i]);
+        
+      }
+      
+      if(nombres.length==1){
+          return nombres.join(' and ')+' likes this';
+      }else if(nombres.length==2){        
+          return nombres[0]+' and '+nombres[1]+' like this';
+      }else if(nombres.length==3){        
+          return nombres[0]+', '+nombres[1]+' and '+nombres[2]+' like this';
+      }else if(nombres.length>=4){
+          return nombres[0]+', '+nombres[1]+' and '+(nombres.length-2)+' others like this';
+      }
+   }
+
+ 
+}
+## Conteo de bits
+var countBits = function(n) {
+  // Program Me
+    let numb=[];
+    numb=n.toString(2).split('');
+    let cont=0;
+  for(let i=0; i<numb.length;i++){
+    
+    numb[i]==1 ? cont++:cont
+    
+  }
+  
+  return cont;
+  
+};
+
+## Su pedido, por favor
+
+function order(words){
+  // ...
+  let palab=[];
+  let texto=[];
+  palab=words.trim().split(' ');
+  
+  for(let i=0; i<=palab.length;i++ ){
+    for(let j=0; j<palab.length; j++){
+      if (palab[j].indexOf(i) >= 0) {
+        texto.push(palab[j]);
+      }
+    }
+  }
+  return texto.join(' ').trim()
+}
