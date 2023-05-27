@@ -1382,3 +1382,48 @@ function order(words){
   }
   return texto.join(' ').trim()
 }
+
+## Conteo de Duplicados
+
+function duplicateCount(text){
+  var count=0;
+  let texto=text.toLowerCase();
+  
+  for(let i=0; i<texto.length;i++){
+    
+   if (texto.indexOf(texto[i]) !== texto.lastIndexOf(texto[i])) {
+      count++;
+      texto = texto.replace(new RegExp(texto[i], 'g'), '');
+      i = i - 1;
+    }
+    
+  }
+  return count;
+    
+}
+
+## Cifre Esto
+
+function encrypt(palab){
+  
+  if(palab.length===1) return palab.charCodeAt(0);
+  const chB=palab[1];
+  palab=palab.replace(palab[0], palab.charCodeAt(0));
+  palab=palab.replace(chB, palab[palab.length - 1]);
+  palab=palab.replace(/\w$/, chB);
+  return palab;
+}
+var encryptThis = function(text) {
+    
+  let tArr=text.split(' ');
+  let resultado='';
+  
+  tArr.forEach((wd)=>{
+    resultado=resultado+' '+encrypt(wd);
+  });
+  
+  return resultado.trim();
+  
+}
+
+## Cifre Esto
