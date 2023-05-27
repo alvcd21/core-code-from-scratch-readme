@@ -1426,4 +1426,14 @@ var encryptThis = function(text) {
   
 }
 
-## Cifre Esto
+## Paréntesis válidos
+
+function validParentheses(parens) {
+  return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
+}
+
+## Convertir cadena a estuche de camello
+
+function toCamelCase(str){
+  return str.replace(/-/g, '_').split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');
+}
