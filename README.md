@@ -1437,3 +1437,97 @@ function validParentheses(parens) {
 function toCamelCase(str){
   return str.replace(/-/g, '_').split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');
 }
+
+# Desafio Semana 9(Lunes)
+
+## "This" es un problema
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    this.name= this.firstName + " " + this.lastName;
+}
+## Listas de Listas
+function processData(data){
+
+  let res=0;
+  let mul=1;
+  
+  for(let i=0;i<data.length;i++){
+     res=data[i][0]-data[i][1];
+     mul=mul*res;
+    }
+   return mul;
+    
+
+}
+## Palabras a Reves
+function spinWords(string){
+  
+   var palab = string.split(" ");
+
+  for (let i=0; i<palab.length; i++) {
+    
+    if (palab[i].length >= 5) {
+      palab[i] = palab[i].split("").reverse().join("");
+    }
+  }
+  return palab.join(" ");  
+  
+}
+
+# Desafio Semana 9(Martes)
+
+## this: es otro problema
+
+function NamedOne(first, last) {
+  this.firstName = first;
+  this.lastName = last;
+
+  Object.defineProperty(this, 'fullname', {
+    get: function() {
+      return this.firstName + ' ' + this.lastName;
+    },
+    set: function(nombre) {
+      const partes = nombre.split(' ');
+      if (partes.length === 2) {
+        this.firstName = partes[0];
+        this.lastName = partes[1];
+      }
+    }
+  });
+}
+
+## ¿A quién le gusta?
+
+function likes(names) {
+  // TODO
+  var nombres=[];
+   if(names.length==0){
+     return "no one likes this";
+   }else{
+      
+      for(let i=0;i<names.length;i++){
+        
+        nombres.push(names[i]);
+        
+      }
+      
+      if(nombres.length==1){
+          return nombres.join(' and ')+' likes this';
+      }else if(nombres.length==2){        
+          return nombres[0]+' and '+nombres[1]+' like this';
+      }else if(nombres.length==3){        
+          return nombres[0]+', '+nombres[1]+' and '+nombres[2]+' like this';
+      }else if(nombres.length>=4){
+          return nombres[0]+', '+nombres[1]+' and '+(nombres.length-2)+' others like this';
+      }
+   }
+ 
+}
+
+## Convertir cadena a estuche de camello
+
+function toCamelCase(str){
+  return str.replace(/-/g, '_').split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');
+}
+
