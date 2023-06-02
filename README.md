@@ -1567,3 +1567,53 @@ function validParentheses(parens) {
   return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
 }
 
+# Desafio Semana 9(Jueves)
+
+## El generador de hashtags
+function generateHashtag(str) {
+  if (str.trim() === "") {
+    return false;
+  }
+
+  var resultado = "#";
+  var palabras = str.split(" ");
+  
+  for (let i = 0; i < palabras.length; i++) {
+    var palabra = palabras[i];
+    if (palabra !== "") {
+      resultado += palabra.charAt(0).toUpperCase() + palabra.slice(1);
+    }
+  }
+  
+  if (resultado.length > 140) {
+    return false;
+  }
+  
+  return resultado;
+}
+## Incrementador de cadenas
+
+function incrementString(str) {
+  
+  var match = str.match(/\d+$/);
+  var text = "";
+
+  if (match) {
+
+    var numberStr = match[0];
+    var textStr = str.slice(0, match.index);
+
+    var number = parseInt(numberStr, 10) + 1;
+    var zeros = numberStr.length - number.toString().length;
+
+    for (var i = 0; i < zeros; i++) {
+      text += "0";
+    }
+
+    text = textStr + text + number;
+  } else {
+    text = str + "1";
+  }
+
+  return text;
+}
