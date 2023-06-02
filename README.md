@@ -1531,3 +1531,39 @@ function toCamelCase(str){
   return str.replace(/-/g, '_').split('_').map((word, i) => (i > 0 ? word.toUpperCase()[0] + word.substr(1) : word)).join('');
 }
 
+# Desafio Semana 9(Miercoles)
+
+## Devolución de llamada matemática fácil
+
+function processArray(arr, callback) {
+  var result = [];
+  for (let i = 0; i < arr.length; i++) {
+    result[i]=(callback(arr[i]));
+  }
+  return result;
+}
+
+## Mover ceros al final
+
+function moveZeros(arr) {
+  let cont=0;
+  var result=[];
+  
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]===0){
+      cont++;
+    }else{
+      result.push(arr[i])
+    }
+  }
+  for(let j=0;j<cont;j++){
+    result.push(0);
+  }
+  return result;
+}
+
+## Paréntesis válidos
+function validParentheses(parens) {
+  return [...parens].reduce((a, c) => (a + c).replace('()', ''), '') === '';
+}
+
